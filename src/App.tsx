@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {
   HashRouter as Router,
+  Switch,
   Route
 } from 'react-router-dom';
 
@@ -15,12 +16,14 @@ class App extends React.Component {
       <Router>
         <div id="workbench" className="App pt-focus-disabled">
           <WorkbenchNavbar />
-          {routes.map((route, index) => (
-            <Route
-              key={index}
-              {...route}
-            />
-          ))}
+          <Switch>
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                {...route}
+              />
+            ))}
+          </Switch>
         </div>
       </Router>
     );

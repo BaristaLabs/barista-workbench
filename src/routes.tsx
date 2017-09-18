@@ -26,5 +26,21 @@ export const routes: Array<RouteProps> = [
                 <div>Fiddle</div>
             );
         }
+    },
+    {
+        path: '/settings',
+        render: (stateProps) => {
+            return (
+                <div>Settings</div>
+            );
+        }
+    },
+    {
+        path: '*',
+        render: (stateProps) => {
+            return (
+                <div>Not Found</div>
+            );
+        }
     }
 ];
