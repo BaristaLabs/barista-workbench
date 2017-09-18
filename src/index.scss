@@ -1,5 +1,8 @@
 $icon-font-path: "~@blueprintjs/core/resources/icons";
+$pt-navbar-height: 25px;
 @import "~@blueprintjs/core/src/blueprint.scss";
+
+
 
 body {
   padding-top: $pt-navbar-height;
