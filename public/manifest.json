@@ -1,15 +1,19 @@
 {
-  "short_name": "Barista Workbench",
+  "manifest_version": 2,
+
   "name": "Barista Workbench",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "description": "This extension provides a rich environment to manipulate the contents of a page programatically",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": {
+      "32": "favicon.png"
+    },
+    "default_title": "Barista Workbench",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
 }
