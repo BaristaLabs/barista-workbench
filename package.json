@@ -24,11 +24,15 @@
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.1",
     "react-scripts-ts": "BaristaLabs/react-scripts-ts"
   },
   "scripts": {
     "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
+    "build": " react-scripts-ts build",
+    "buildAll": "npm run buildBackground && npm run buildProxy && react-scripts-ts build",
+    "buildBackground": "cd packages/workbench-background && yarn build && cd ../..",
+    "buildProxy": "cd packages/workbench-proxy && yarn build && cd ../..",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   }

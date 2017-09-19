@@ -1,0 +1,27 @@
+{
+  "name": "barista-workbench-background",
+  "version": "0.1.0",
+  "description": "Barista Workbench Background Script",
+  "private": true,
+  "scripts": {
+    "build": "rimraf build && webpack -p --optimize-minimize --bail --progress --profile --config ./config/webpack.config.js && cpr build/Background.js ../../public/src/backgroundScript.js -o"
+  },
+  "dependencies": {
+    "core-js": "^2.5.1",
+    "object-assign": "^4.1.1",
+    "promise": "^8.0.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "cpr": "^2.2.0",
+    "html-webpack-inline-source-plugin": "^0.0.9",
+    "html-webpack-plugin": "^2.30.1",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.1",
+    "tslint": "^5.7.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.4.2",
+    "webpack": "^3.4.1"
+  }
+}
