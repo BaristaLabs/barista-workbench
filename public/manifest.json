@@ -4,10 +4,16 @@
   "name": "Barista Workbench",
   "description": "This extension provides a rich environment to manipulate the contents of a page programatically",
   "version": "1.0",
-
+  "icons": {
+    "128": "images/favicon_128.png"
+  },
   "browser_action": {
     "default_icon": {
-      "32": "favicon.png"
+      "512": "images/favicon_512.png",
+      "128": "images/favicon_128.png",
+      "48": "images/favicon_48.png",
+      "32": "images/favicon_32.png",
+      "16": "images/favicon_16.png"
     },
     "default_title": "Barista Workbench",
     "default_popup": "popup.html"
