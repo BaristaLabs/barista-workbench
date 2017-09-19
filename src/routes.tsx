@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { RouteProps } from 'react-router-dom';
 
+import { Fiddle } from './components/Fiddle';
 export const routes: Array<RouteProps> = [
     {
         path: '/',
@@ -23,7 +24,7 @@ export const routes: Array<RouteProps> = [
         path: '/fiddle/:fiddlePath*',
         render: (stateProps) => {
             return (
-                <div>Fiddle</div>
+                <Fiddle />
             );
         }
     },
