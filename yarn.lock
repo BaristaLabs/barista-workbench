@@ -4963,8 +4963,8 @@ react-router@^4.2.0:
     warning "^3.0.0"
 
 react-scripts-ts@BaristaLabs/react-scripts-ts:
-  version "2.7.16"
-  resolved "https://codeload.github.com/BaristaLabs/react-scripts-ts/tar.gz/0f39aecd975d33165a9094c13938af1f50cda3ea"
+  version "2.7.21"
+  resolved "https://codeload.github.com/BaristaLabs/react-scripts-ts/tar.gz/bcb169f6c32c86fd6f24ad694875af90bb62feae"
   dependencies:
     app-root-path "^2.0.1"
     autoprefixer "^7.1.4"
